@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>Test</title>
+        <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    </head>
+    <body>
+        <div id="mocha"></div>
+        <div id ="pomocni"></div>
+        
+        <script src="https://unpkg.com/chai/chai.js"></script>
+        <script src="https://unpkg.com/mocha/mocha.js"></script>
+        <script src="./node_modules/sinon/pkg/sinon.js"></script>
+        
+        
+        <script class="mocha-init">
+            // mocha.reporter('json');
+            mocha.setup('bdd');
+            mocha.checkLeaks();
+        </script>
+        <script src="testModula.js"></script>
+        <script src="public/VjezbeAjax.js"></script>
+        <script class="mocha-exec">
+            mocha.run();
+        </script>
+    </body>
+
+</html>

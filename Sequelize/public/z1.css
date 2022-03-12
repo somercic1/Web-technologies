@@ -1,0 +1,107 @@
+#mainDiv{
+    padding: 2px 10px 2px 2px;
+   
+    row-gap: 5px;
+    column-gap: 5px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 93px;
+    grid-template-areas:
+    "m m"
+    "s g";
+}
+body{
+    background-color: cornflowerblue;
+}
+
+
+
+#studenti {
+    border: 1px solid blue;
+    grid-area: s;
+    padding: 20px;
+}
+
+#grupe{
+    border: 1px solid blue;
+    grid-area: g;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+
+#meni{
+    position:relative;
+    border: 1px solid blue;
+    grid-area: m;
+    padding-top: 50px;
+    padding-left: 2px;
+}
+
+#menuItems{
+    position: absolute;
+    bottom: 10px;
+}
+
+table {
+    table-layout:fixed;
+    width:100%;
+    margin: 5px;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.student {
+    float: left;
+    padding: 10px;
+    background: forestgreen;
+    margin: 5px;
+    border: 1px solid black;
+    width: fit-content;
+}
+
+.row:after {
+    display: table;
+    clear: both;
+}
+
+#menuItems{
+    margin-left: 10px;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+    #mainDiv {
+        padding: 5px 5px 5px 5px;
+        grid-template-columns: 100%;
+        grid-template-rows: 70px;
+        grid-template-areas:
+        "m"
+        "g"
+        "s";
+    }
+
+}
+
+@media (max-width: 499px) {
+
+    #mainDiv {
+        padding: 5px 5px 5px 5px;
+        grid-template-columns: 100%;
+        grid-template-rows: 70px;
+        grid-template-areas:
+        "m"
+        "g"
+        "s";
+    }
+
+    #tableOfGroups td, th {
+        display: none;
+    }
+
+    #tableOfGroups td:nth-child(1), th:nth-child(1) {
+        display: block;
+    }
+}
