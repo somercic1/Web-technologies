@@ -1,0 +1,46 @@
+@objects
+	body body
+	meni #meni
+	Komentar #Komentar
+	Test #Test
+	grupelnk #grupelnk
+	vjezbelnk #vjezbelnk
+
+= Width section =
+	meni:
+		width 98 to 100 % of body/width
+	Komentar:
+		width 98 to 100 % of body/width
+	Test:
+		width 98 to 100 % of body/width
+
+= Height section =
+
+= Inside section =
+	grupelnk:
+		inside meni
+	vjezbelnk:
+		inside meni
+
+= Below section =
+	Komentar:
+		below meni
+	Komentar:
+		below grupelnk
+	Komentar:
+		below vjezbelnk
+
+= Visible section =
+	meni:
+		visible
+	Komentar:
+		visible
+	grupelnk:
+		visible
+	vjezbelnk:
+		visible
+	Test:
+		visible
+
+
+	
