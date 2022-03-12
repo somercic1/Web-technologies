@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="unosVjezbi.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <title>Aktivnosti</title>
+</head>
+<body class="tijelo">
+
+<form method="POST">
+    <label>Unesite nove vjezbe:</label>
+    <br>
+    <input type="number" name="brojVjezbi" id="brojVjezbi">
+<br>
+<button type="button" class="btn1" onClick="dodaj()">Dodaj input polja</button>
+</form>
+<br>
+ <div id="inputPolja">
+ 
+    
+</div>
+<button type="button" class="btn1" onClick="posalji()">Posalji podatke</button>
+
+
+   
+<script src="unosVjezbi.js"></script>
+<script src="VjezbeAjax.js"></script>
+</body>
+</html>

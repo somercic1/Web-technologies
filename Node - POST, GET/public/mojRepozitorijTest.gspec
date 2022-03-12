@@ -1,0 +1,34 @@
+@objects
+	body body
+	meni #meni
+	grupelnk #grupelnk
+	vjezbelnk #vjezbelnk
+	uploadRepo #uploadRepo
+
+= Width section =
+	uploadRepo:
+		width 18 to 20 % of body/width
+
+= Height section =
+
+= Inside section =
+	grupelnk:
+		inside meni
+	vjezbelnk:
+		inside meni
+
+= Above section =
+	meni:
+		above uploadRepo
+
+= Visible section =
+	meni:
+		visible
+	uploadRepo:
+		visible
+	grupelnk:
+		visible
+	vjezbelnk:
+		visible
+	
+	

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unos studenta</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+</head>
+
+<body class="tijelo">
+
+    <div >
+        <form action="/action_page.php">
+            <label for="fname">Ime studenta:</label>
+            <input id="ime" type="text" id="name" name="name"><br><br>
+            <label for="lname">Prezime studenta:</label>
+            <input id="prezime" type="text" id="name" name="name"><br><br>
+            <label for="index">Index studenta :</label>
+            <input id="index" type="text" id="index" name="index"><br><br>
+            <label for="index">Grupa kojoj pripada:</label>
+            <input id="grupa" type="text" id="index" name="index"><br><br>
+            <br>
+            <button type="button" onclick="posaljiStudenta()">Submit</button>
+        </form> 
+        <div id="poruka">
+
+        </div>
+    </div>
+
+      	
+    <script src="StudentAjax.js"></script>
+    <script src="unesiStudent.js"></script>
+</body>
+
+</html>

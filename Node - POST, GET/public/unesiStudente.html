@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+</head>
+
+<body class="tijelo">
+
+    <div >
+        <form action="/action_page.php">
+            <label for="fname">Upisi studente u CSV fomrmatu bez headera:</label>
+            <br>
+            <textarea id="textarea" type="text" id="fname" name="fname" rows="4" cols="50"></textarea>
+            
+            <br>
+            <button type="button" onclick="posaljiStudente()">Submit</button>
+        </form> 
+        <div id="poruka">
+
+        </div>
+    </div>
+
+      	
+    <script src="StudentAjax.js"></script>
+    <script src="unesiStudent.js"></script>
+</body>
+
+</html>

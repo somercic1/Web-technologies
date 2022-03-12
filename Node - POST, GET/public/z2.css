@@ -1,0 +1,150 @@
+body{
+    background: cornflowerblue;
+}
+
+#mainDiv{
+    padding: 2px 4px 2px 2px;
+    row-gap: 5px;
+    column-gap: 5px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100px;
+    grid-template-areas:
+    "m m"
+    "v g";
+}
+
+ul {
+    list-style-position: inside;
+    }
+
+#meni{
+    position:relative;
+    border: 1px solid blue;
+    grid-area: m;
+    padding-top: 50px;
+    padding-left: 2px;
+}
+
+#odabirVjezbe {
+    border: 1px solid blue;
+    grid-area: v;
+    padding: 20px;
+}
+
+#grafovi{
+    border: 1px solid blue;
+    grid-area: g;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.graphImg{
+    max-width: 350px;
+    max-height: 350px;
+}
+
+
+.graphDiv {
+    float: left;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    width: fit-content;
+}
+
+.row:after {
+    display: table;
+    clear: both;
+}
+
+.vjezbaDiv{
+    border: 1px solid #505050;
+    background-color: #D3D3D3;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+  
+  li {
+    float: left;
+    background-color: #87CEEB;
+    margin: 5px 5px 5px 5px;
+    padding: 10px 10px 10px 10px;
+    font-size: xx-small;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+
+
+.vjezbeLinks{
+    background-color: #6699cc;
+    height: fit-content;
+    max-height: inherit;
+    border-top: 1px solid #505050;
+}
+
+
+#menuItems{
+    position: absolute;
+    bottom: 10px;
+}
+
+.vjezbaTitle{
+    display: inline-block;
+}
+
+.listOfVjezbe{
+    max-height: inherit;
+    margin-top: 5px;
+}
+
+@media (max-width: 799px) {
+
+
+    #mainDiv{
+        padding: 2px 4px 2px 2px;
+        row-gap: 5px;
+        column-gap: 5px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px;
+        grid-template-areas:
+        "m"
+        "v"
+        "g";
+    }
+
+    .graphImg{
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    
+
+    .vjezbeLinks{
+        max-height: inherit;
+    }
+
+    li {
+        padding: 5px 5px 5px 5px;
+    }
+
+}
